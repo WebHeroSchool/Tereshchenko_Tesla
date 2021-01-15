@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e88f5d4-462f-4165-b6d4-518d7b2f5100" name="Default Changelist" comment="" />
+    <list default="true" id="6e88f5d4-462f-4165-b6d4-518d7b2f5100" name="Default Changelist" comment="Правки pixel-perfect">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +42,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1k14qm0Roox4s0CuXI80zrOaKPe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -51,21 +82,67 @@
       <workItem from="1605472063610" duration="5171000" />
       <workItem from="1606079433266" duration="19000" />
       <workItem from="1606491304228" duration="17073000" />
-      <workItem from="1607628869792" duration="428000" />
+      <workItem from="1607628869792" duration="1447000" />
+      <workItem from="1607954624172" duration="6544000" />
+      <workItem from="1607969919594" duration="796000" />
+      <workItem from="1608490796661" duration="8336000" />
+      <workItem from="1608731602869" duration="903000" />
+      <workItem from="1608916723924" duration="8565000" />
+      <workItem from="1609796530595" duration="518000" />
+      <workItem from="1610281574735" duration="2122000" />
+      <workItem from="1610296163537" duration="1386000" />
+      <workItem from="1610635811199" duration="3618000" />
     </task>
+    <task id="LOCAL-00001" summary="Правки pixel-perfect">
+      <created>1609262031192</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609262031192</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Правки pixel-perfect" />
+    <option name="LAST_COMMIT_MESSAGE" value="Правки pixel-perfect" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="104" y="29" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607956713082">
+      <screen x="0" y="23" width="1280" height="692" />
+    </state>
+    <state x="104" y="29" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.692@0.23.1280.692" timestamp="1607956713082" />
     <state x="378" y="125" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604862051002">
       <screen x="0" y="23" width="1280" height="700" />
     </state>
     <state x="378" y="125" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.700@0.23.1280.700" timestamp="1604862051002" />
-    <state x="304" y="35" width="670" height="676" key="search.everywhere.popup" timestamp="1607371807026">
+    <state x="240" y="103" key="Vcs.Push.Dialog.v2" timestamp="1609262057529">
       <screen x="0" y="23" width="1280" height="688" />
     </state>
+    <state x="240" y="103" key="Vcs.Push.Dialog.v2/0.23.1280.688@0.23.1280.688" timestamp="1609262057529" />
+    <state x="440" y="284" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608655127264">
+      <screen x="0" y="23" width="1280" height="688" />
+    </state>
+    <state x="440" y="284" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.688@0.23.1280.688" timestamp="1608655127264" />
+    <state x="304" y="35" width="670" height="680" key="search.everywhere.popup" timestamp="1607969126728">
+      <screen x="0" y="23" width="1280" height="692" />
+    </state>
     <state x="304" y="35" width="670" height="676" key="search.everywhere.popup/0.23.1280.688@0.23.1280.688" timestamp="1607371807026" />
+    <state x="304" y="35" width="670" height="680" key="search.everywhere.popup/0.23.1280.692@0.23.1280.692" timestamp="1607969126728" />
   </component>
 </project>
