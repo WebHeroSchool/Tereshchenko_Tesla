@@ -421,7 +421,7 @@ body {
 .skeleton__quality .stats__details {
   position: relative;
   top: 4px;
-  right: 10px;
+  right: 7px;
 }
 
 .skeleton__description-footer {
@@ -477,8 +477,15 @@ body {
   margin-bottom: 57px;
 }
 
+.stats__highlight-stars {
+  transform: translateX(-3px);
+  letter-spacing: 2.4px;
+  display: inline-block;
+}
+
 .skeleton__footer-actions .order-btn_white {
   left: 0;
+  top: 2px;
 }
 
 .skeleton__footer-actions .test-drive {
@@ -501,7 +508,7 @@ body {
 }
 
 .skeleton__quality .stats__details {
-  margin-left: 23px;
+  margin-left: 20px;
 }
 
 .skeleton__content {
