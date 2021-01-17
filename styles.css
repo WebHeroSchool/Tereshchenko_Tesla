@@ -294,6 +294,7 @@ body {
 .cockpit__title {
   font-weight: 600;
   font-size: 70px;
+  position: relative;
   color: #e51937;
   top: 0;
   left: 81px;
@@ -607,4 +608,10 @@ body {
   left: 11px;
   min-width: 175px;
   letter-spacing: .9px;
+}
+
+.skeleton__logo {
+  position: absolute;
+  bottom: 8px;
+  right: 17px;
 }
