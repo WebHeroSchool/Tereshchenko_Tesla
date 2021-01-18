@@ -26,7 +26,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6e88f5d4-462f-4165-b6d4-518d7b2f5100" name="Default Changelist" comment="Правки pixel-perfect">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +91,8 @@
       <workItem from="1610281574735" duration="2122000" />
       <workItem from="1610296163537" duration="1386000" />
       <workItem from="1610635811199" duration="4016000" />
-      <workItem from="1610827985511" duration="4122000" />
+      <workItem from="1610827985511" duration="4690000" />
+      <workItem from="1610984895459" duration="313000" />
     </task>
     <task id="LOCAL-00001" summary="Правки pixel-perfect">
       <created>1609262031192</created>

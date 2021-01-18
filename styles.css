@@ -296,8 +296,8 @@ body {
   font-size: 70px;
   position: relative;
   color: #e51937;
-  top: 0;
-  left: 81px;
+  transform: translateX(81px);
+  width: calc(100% - 81px);
   margin-bottom: -95px;
 }
 
