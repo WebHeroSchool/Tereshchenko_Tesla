@@ -31,7 +31,7 @@ body {
 }
 
 .header__container {
-  padding: 0 60px 0 40px;
+  padding: 24px 60px 0 40px;
 }
 
 .menu,
@@ -52,15 +52,37 @@ body {
 }
 
 .menu__item {
+  position: relative;
   color: #000;
+}
+
+.menu__item:nth-child(4) {
+  left: 13px;
+}
+
+.menu__item:last-child {
+  left: 29px;
 }
 
 .menu__item_active {
   color: #e51937;
 }
 
+.menu__item_active:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #e51937;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
 .menu__item:not(:last-child) {
-  margin-right: 44px;
+  margin-right: 31px;
 }
 
 .menu__item:nth-child(1) {
@@ -69,6 +91,11 @@ body {
 
 .menu__item:nth-child(2) {
   margin-right: 25px;
+}
+
+.side-menu__item:first-child {
+  position: relative;
+  right: 10px;
 }
 
 .side-menu__item:not(:last-child) {
@@ -101,24 +128,30 @@ body {
   font-weight: 600;
   line-height: 110px;
   text-align: center;
-  padding-top: 66px;
+  padding-top: 56px;
 }
 
 .presentation__subtitle {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 7px;
   text-align: center;
-  margin-bottom: 26px;
+  margin-bottom: 31px;
 }
 
 .presentation__background {
   position: absolute;
-  left: 0;
+  left: -78px;
   right: 0;
-  top: 105px;
+  top: 61px;
   bottom: 0;
   z-index: -1;
+}
+
+.presentation__image {
+  left: -35px;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .presentation__background-image {
@@ -131,17 +164,59 @@ body {
   display: flex;
 }
 
+.stats_speed .stats__icon {
+  position: relative;
+  top: 6px;
+  right: 9px;
+}
+
+.stats__details_speed {
+  position: relative;
+  right: 9px;
+  top: 4px;
+}
+
+.stats__icon {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
 .presentation__footer-right {
   align-items: center;
 }
 
 .presentation__footer-left {
-  margin-right: 105px;
+  margin-right: 106px;
+}
+
+.stats__icon_road {
+  top: 9px;
+  right: 10px;
+}
+.stats__details_road {
+  right: 13px;
+  position: relative;
+  top: 4px;
 }
 
 .stats__title {
   font-size: 20px;
   font-weight: 600;
+  line-height: 25px;
+}
+
+.cockpit__stat .stats__title {
+  line-height: 20px;
+  letter-spacing: .9px;
+}
+
+.cockpit__stats .stats__subtitle {
+  letter-spacing: .7px;
+}
+
+.cockpit__stat:last-child .stats__subtitle {
+  margin-top: 3px;
 }
 
 .stats__highlight-title {
@@ -150,10 +225,6 @@ body {
 
 .stats__subtitle {
   font-size: 12px;
-}
-
-.stats__details {
-  margin-left: 14px;
 }
 
 .stats {
@@ -174,7 +245,10 @@ body {
   display: inline-flex;
   align-items: center;
   cursor: pointer;
-  margin-right: 30px;
+  margin-right: 27px;
+  right: 10px;
+  position: relative;
+  top: 3px;
 }
 
 .test-drive__label {
@@ -183,11 +257,16 @@ body {
   text-transform: uppercase;
   display: inline-block;
   margin-left: 7px;
+  letter-spacing: .7px;
 }
 
 .presentation__footer {
   display: flex;
   align-items: center;
+}
+
+.cockpit__stat .stats__icon {
+  margin-right: 25px;
 }
 
 .order-btn {
@@ -200,21 +279,26 @@ body {
   color: #e51937;
   text-transform: uppercase;
   cursor: pointer;
+  position: relative;
+  top: 3px;
+  left: 6px;
+  letter-spacing: .7px;
 }
 
 .presentation__arrow {
   display: flex;
   justify-content: center;
-  margin: 39px 0;
+  margin: 35px 0;
 }
 
 .cockpit__title {
   font-weight: 600;
   font-size: 70px;
+  position: relative;
   color: #e51937;
-  position: absolute;
-  top: 0;
-  left: 60px;
+  transform: translateX(81px);
+  width: calc(100% - 81px);
+  margin-bottom: -95px;
 }
 
 .cockpit {
@@ -229,7 +313,7 @@ body {
   bottom: 0;
   width: 440px;
   background-color: #e51937;
-  padding: 52px 44px 63px 52px;
+  padding: 49px 44px 63px 52px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -240,36 +324,71 @@ body {
 }
 
 .cockpit__icon-container {
-  width: 46px;
+  width: 60px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
 }
 
 .skeleton__description-title,
+.skeleton__evaluation-title,
 .cockpit__description-title {
   font-weight: 600;
   font-size: 30px;
   line-height: 37px;
   color: #fff;
-  margin-bottom: 11px;
+  margin-bottom: 10px;
+}
+
+.cockpit__description-title {
+  letter-spacing: 1.4px;
 }
 
 .skeleton__description-subtitle,
 .cockpit__description-subtitle {
   font-weight: 500;
   font-size: 15px;
-  line-height: 18px;
+  line-height: 18.5px;
   color: #fff;
-  margin-bottom: 54px;
+  margin-bottom: 68px;
+  max-width: 261px;
+}
+
+.cockpit__description-subtitle {
+  min-width: 89%;
+  letter-spacing: .9px;
+}
+
+.skeleton .skeleton__description-subtitle {
+  margin-bottom: 58px;
+  max-width: 325px;
+  letter-spacing: 1px;
+}
+
+.skeleton__evaluation-title {
+  margin-bottom: 25px;
+  letter-spacing: 1.7px;
 }
 
 .cockpit__stat {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
+}
+
+.cockpit__stat:first-child {
+  margin-bottom: 43px;
+}
+
+.cockpit__stat:first-child .stats__icon {
+  top: 8px;
 }
 
 .test-drive_white .test-drive__label {
   color: #fff;
+}
+
+.cockpit__description-footer .test-drive {
+  margin-right: 25px;
+  right: 3px;
 }
 
 .order-btn_white {
@@ -280,7 +399,7 @@ body {
 .cockpit__description-footer {
   align-items: center;
   display: flex;
-  margin-top: 171px;
+  margin-bottom: 4px;
 }
 
 .skeleton__description-box {
@@ -296,13 +415,23 @@ body {
   padding: 51px 68px 60px 56px;
 }
 
+.skeleton__description-title {
+  letter-spacing: 1.2px;
+}
+
+.skeleton__quality .stats__details {
+  position: relative;
+  top: 4px;
+  right: 7px;
+}
+
 .skeleton__description-footer {
-  padding: 0 55px 60px 38px;
+  padding: 0 55px 63px 38px;
 }
 
 .skeleton {
   display: flex;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .skeleton__content {
@@ -311,6 +440,7 @@ body {
 
 .rating {
   padding: 0;
+  max-width: 292px;
 }
 
 .rating__item {
@@ -318,7 +448,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 9px;
 }
 
 .rating__small-text {
@@ -332,6 +462,7 @@ body {
   color: white;
   text-transform: uppercase;
   margin-right: 15px;
+  letter-spacing: .8px;
 }
 
 .skeleton__footer-actions {
@@ -344,11 +475,33 @@ body {
   display: flex;
   justify-content: center;
   margin-right: 0 !important;
-  margin-bottom: 60px;
+  margin-bottom: 57px;
+}
+
+.stats__highlight-stars {
+  transform: translateX(-3px);
+  letter-spacing: 2.4px;
+  display: inline-block;
+}
+
+.skeleton__footer-actions .order-btn_white {
+  left: 0;
+  top: 2px;
+}
+
+.skeleton__footer-actions .test-drive {
+  top: 2px;
+  right: 0;
 }
 
 .skeleton__quality .stats__subtitle {
   font-size: 25px;
+  letter-spacing: 2.1px;
+}
+
+.skeleton__description-footer .stats__title {
+  line-height: 20px;
+  letter-spacing: 2px;
 }
 
 .skeleton__quality .stats__highlight-title {
@@ -356,7 +509,7 @@ body {
 }
 
 .skeleton__quality .stats__details {
-  margin-left: 23px;
+  margin-left: 20px;
 }
 
 .skeleton__content {
@@ -365,60 +518,67 @@ body {
 }
 
 .skeleton__content-title {
-  font-size: 200px;
-  font-weight: 600;
-  color: #e51937;
-  opacity: .1;
-  position: absolute;
-  top: 97px;
-  right: -10px;
+  padding: 266px 100% 166px 0;
+  background: right no-repeat url(img/Model_S.svg);
 }
 
 .skeleton__background {
   position: absolute;
   top: 223px;
-  left: -105px;
+  left: -95px;
 }
 
 .pin {
   position: absolute;
 }
 
-.pin_1 {
+.pin_first {
   top: 0;
   left: 269px;
 }
 
-.pin_1 .pin__stripe {
-  height: 271px;
+.pin_first .pin__stripe {
+  height: 268px;
 }
 
-.pin_2 {
-  top: -56px;
-  left: 547px;
+.pin_first .pin__label {
+  line-height: 15px;
+  top: -2px;
+  left: 15px;
 }
 
-.pin_2 .pin__stripe {
-  height: 122px;
+.pin_second {
+  top: -47px;
+  left: 548px;
 }
 
-.pin_3 {
-  bottom: 66px;
+.pin_second .pin__stripe {
+  height: 119px;
+}
+
+.pin_second .pin__label {
+  line-height: 16px;
+  top: -4px;
+}
+
+.pin_third {
+  bottom: 60px;
   left: 603px;
 }
 
-.pin_3 .pin__stripe {
-  height: 102px;
+.pin_third .pin__stripe {
+  height: 105px;
 }
 
-.pin_3 .pin__stripe:after {
+.pin_third .pin__stripe:after {
   top: -13px;
 }
 
-.pin_3 .pin__label {
-  top: 100%;
+.pin_third .pin__label {
   min-width: 235px;
   transform: translateY(-100%);
+  top: 108px;
+  line-height: 17px;
 }
 
 .pin__stripe {
@@ -432,12 +592,12 @@ body {
   content: '';
   display: block;
   position: absolute;
-  width: 14px;
-  height: 14px;
+  width: 8px;
+  height: 8px;
   border: 3px solid #e51937;
   border-radius: 50%;
   background: white;
-  left: -8px;
+  left: -5px;
   top: calc(100% - 1px);
 }
 
@@ -445,7 +605,13 @@ body {
   font-size: 17px;
   font-weight: 600;
   position: absolute;
-  top: -5px;
   left: 11px;
   min-width: 175px;
+  letter-spacing: .9px;
+}
+
+.skeleton__logo {
+  position: absolute;
+  bottom: 8px;
+  right: 17px;
 }
