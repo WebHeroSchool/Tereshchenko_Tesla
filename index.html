@@ -5,6 +5,7 @@
   <title>Tesla</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="fonts.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
 <div class="wrapper">
@@ -44,12 +45,12 @@
   <div class="main">
     <section class="presentation">
       <div class="presentation__background">
-        <img class="presentation__background-image" src="./img/Tesla-Wordmark-Red.svg" alt="Tesla">
+        <div class="presentation__background-image"></div>
       </div>
       <div class="presentation__title">Model S</div>
       <div class="presentation__subtitle">Добро пожаловать в будущее!</div>
       <div class="presentation__image">
-        <img src="./img/tesla-png-tesla-png-hd-1636.svg" alt="Tesla">
+        <img src="./img/tesla-png-tesla-png-hd-1636.svg" class="presentation__tesla" alt="Tesla">
       </div>
       <div class="presentation__footer">
         <div class="presentation__footer-left">
@@ -57,16 +58,18 @@
             <img class="stats__icon" src="./img/Speed.svg" alt="Model S">
             <div class="stats__details stats__details_speed">
               <div class="stats__title">
-                <span class="stats__highlight-title">2,7</span> сек
+                <span class="stats__highlight-title">2,7</span>
+                <span class="stats__title-label">сек</span>
               </div>
               <div class="stats__subtitle">0-100 км/час</div>
             </div>
           </div>
           <div class="stats">
-            <img class="stats__icon stats__icon_road" src="./img/road.svg" alt="Model S">
+            <div class="stats__icon stats__icon_road"></div>
             <div class="stats__details stats__details_road">
               <div class="stats__title">
-                <span class="stats__highlight-title">632</span> км
+                <span class="stats__highlight-title">632</span>
+                <span class="stats__title-label">км</span>
               </div>
               <div class="stats__subtitle">запас хода</div>
             </div>
@@ -74,10 +77,10 @@
         </div>
         <div class="presentation__footer-right">
           <div class="test-drive">
-            <img src="./img/steering-wheel.svg" alt="Steering wheel" class="test-drive__icon">
+            <div class="test-drive__icon"></div>
             <div class="test-drive__label">Тест драйв</div>
           </div>
-          <button class="order-btn" type="button">Заказать</button>
+          <button class="order-btn" type="button"><span class="order-btn__label">Заказать</span></button>
         </div>
       </div>
       <div class="presentation__arrow">
@@ -87,20 +90,22 @@
     <div class="cockpit">
       <div class="cockpit__title">Model S</div>
       <div class="cockpit__car">
-        <img src="./img/2013-tesla-model-s-cockpit.png" alt="Cockpit" class="cockpit__car-bg">
+        <div class="cockpit__car-bg"></div>
       </div>
       <div class="cockpit__description">
-        <section>
-          <div class="cockpit__description-title">Будущее вождения</div>
-          <div class="cockpit__description-subtitle">Модель S обладает лучшей в своем классе вместимостью: в машине
-            поместится до пяти взрослых и двух детей. Оснащена современным 17&#8209;дюймовым сенсорным экраном.
-            Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная
-            крыша обеспечивает просторный интерьер для каждого пассажира.
+        <section class="cockpit__section">
+          <div>
+            <div class="cockpit__description-title">Будущее вождения</div>
+            <div class="cockpit__description-subtitle">Модель S обладает лучшей в своем классе вместимостью: в машине
+              поместится до пяти взрослых и двух детей. Оснащена современным 17&#8209;дюймовым сенсорным экраном.
+              Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная
+              крыша обеспечивает просторный интерьер для каждого пассажира.
+            </div>
           </div>
           <div class="cockpit__stats">
             <div class="stats stats_white cockpit__stat">
               <div class="cockpit__icon-container">
-                <img class="stats__icon " src="./img/mobile.svg" alt="Model S">
+                <img class="stats__icon" src="./img/mobile.svg" alt="Model S">
               </div>
               <div class="stats__details">
                 <div class="stats__title">
@@ -133,24 +138,27 @@
         </section>
         <div class="cockpit__description-footer">
           <div class="test-drive test-drive_white">
-            <img src="./img/Group.svg" alt="Ring" class="test-drive__icon">
+            <div class="test-drive__icon test-drive__icon_info"></div>
             <div class="test-drive__label">Узнать больше</div>
           </div>
-          <button class="order-btn order-btn_white" type="button">Заказать</button>
+          <button class="order-btn order-btn_white" type="button"><span class="order-btn__label">Заказать</span></button>
         </div>
       </div>
     </div>
     <div class="skeleton">
       <div class="skeleton__description-box">
         <section class="skeleton__description-content">
-          <div class="skeleton__description-title">Самый безопасный
+         <div class="skeleton__description_stats">
+           <div class="skeleton__description-title">Самый безопасный
             автомобиль в мире
           </div>
           <div class="skeleton__description-subtitle">Модель S достигла наивысшей оценки безопасности любого автомобиля,
             когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных
             случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.
           </div>
-          <div class="skeleton__evaluation-title">Оценка защиты:</div>
+         </div>
+         <div class="skeleton__evaluation_stats">
+           <div class="skeleton__evaluation-title">Оценка защиты:</div>
           <ul class="rating">
             <li class="rating__item">
               <span class="rating__title">Спереди</span>
@@ -203,6 +211,7 @@
               </div>
             </li>
           </ul>
+         </div>
         </section>
         <div class="skeleton__description-footer">
           <div class="stats stats_white skeleton__quality">
@@ -216,17 +225,19 @@
           </div>
           <div class="skeleton__footer-actions">
             <div class="test-drive test-drive_white">
-              <img src="./img/Group.svg" alt="Ring" class="test-drive__icon">
+              <div class="test-drive__icon test-drive__icon_info"></div>
               <div class="test-drive__label">Узнать больше</div>
             </div>
-            <button class="order-btn order-btn_white" type="button">Заказать</button>
+            <button class="order-btn order-btn_white" type="button">
+              <span class="order-btn__label">Заказать</span>
+            </button>
           </div>
         </div>
       </div>
       <div class="skeleton__content">
-        <div class="skeleton__content-title"></div>
+        <div class="skeleton__content-title">Model S</div>
         <div class="skeleton__background">
-          <img src="./img/car_skeleton.svg" alt="Model S">
+          <div class="skeleton__background_car"></div>
           <div class="pin pin_first">
             <div class="pin__stripe"></div>
             <div class="pin__label">Защита от удара спереди</div>
