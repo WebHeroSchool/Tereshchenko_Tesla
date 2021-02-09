@@ -141,9 +141,9 @@ body {
 
 .presentation__background {
   position: absolute;
-  left: -77px;
+  left: 0;
   right: 0;
-  top: 50px;
+  top: 0;
   bottom: 0;
   z-index: -1;
 }
@@ -159,7 +159,8 @@ body {
   background: url("./img/Tesla-Wordmark-Red.svg") no-repeat;
   height: 485px;
   width: 100%;
-  background-size: 100% 100%;
+  background-size: calc(100% + 87px) 100%;
+  background-position: -83px 50px;
   opacity: .1;
 }
 
@@ -688,13 +689,13 @@ body {
     height: 23px;
   }
 
-  .presentation__background {
-    left: -56px;
-    width: calc(100% + 110px);
-  }
-
   .presentation__subtitle {
     margin-bottom: 92px;
+  }
+
+  .presentation__background-image {
+    background-position: center 48px;
+    background-size: calc(100% + 111px) 100%;
   }
 
   .presentation__tesla {
@@ -807,6 +808,7 @@ body {
     left: 353px;
     top: 7px;
     margin-bottom: -90px;
+    width: calc(100% - 434px);
   }
 
   .cockpit__car-bg {
@@ -1037,7 +1039,7 @@ body {
   }
 
   .header__container {
-    padding: 71px 20px 0 0;
+    padding: 4px 20px 0 0;
   }
 
   .logo {
@@ -1058,11 +1060,8 @@ body {
   }
 
   .presentation__background-image {
-    position: relative;
-    left: 34px;
-    width: 451px;
-    height: 139px;
-    top: 54px;
+    background-position: -43px -69px;
+    background-size: calc(100% + 75px) 100%;
   }
 
   .presentation__tesla {
@@ -1208,6 +1207,8 @@ body {
     line-height: 122px;
     top: 22px;
     left: -8px;
+    white-space: nowrap;
+    width: 100%;
   }
 
   .pin_first {
