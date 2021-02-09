@@ -1285,7 +1285,7 @@ body {
   }
 
   .skeleton__description-box {
-    width: 375px;
+    width: 100%;
     height: 303px;
   }
 
